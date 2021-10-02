@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Birthday Selfi App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h1 style="font-size: 30px"class="btn btn-warning">Birthday Selfi App</h1>
+        <br><br>
+        <p>In this app you can take image on your "Birthday"</p>
+        <hr>
+        <label>Your Name</label> <input id="name" type="text" placeholder="Enter Here">
+        <br>
+        <br>
+        <label>Your Image Fillter</label> <input id="color" type="text" placeholder="Enter Here">
+        <button id="take" onclick="change_fillter()" class="btn btn-primary">Change Fillter</button>
+        <br>
+        <br>
+        <button id="take" onclick="take_image()" class="btn btn-primary">Take Are Selfie</button>
+<br><br>
+        <label style="display: none" id="show"></label><br>
+        </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
