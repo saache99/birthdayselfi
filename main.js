@@ -30,10 +30,12 @@ function draw()
 
 function take_image()
 {
-    label = document.getElementById("name").value;
- save(label);
- document.getElementById("show").innerHTML = "Happy Birthday " + label;
- document.getElementById("show").style.display = "block";
+    setTimeout(function(){
+        label = document.getElementById("name").value;
+        document.getElementById("show").innerHTML = "Happy Birthday " + label;
+        document.getElementById("show").style.display = "block";
+        save(label);
+    },2000)
 }
 
 function change_fillter()
